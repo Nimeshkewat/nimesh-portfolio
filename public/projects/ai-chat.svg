@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#12161d"/>
+  <rect x="0" y="0" width="800" height="40" fill="#171c24"/>
+  <circle cx="24" cy="20" r="6" fill="#3a4150"/>
+  <circle cx="46" cy="20" r="6" fill="#3a4150"/>
+  <circle cx="68" cy="20" r="6" fill="#3a4150"/>
+  <rect x="120" y="12" width="300" height="16" rx="4" fill="#1b212b"/>
+  <rect x="40" y="72" width="220" height="380" fill="#0f131a" stroke="#232935"/>
+  <rect x="60" y="96" width="180" height="12" rx="3" fill="#232935"/>
+  <rect x="60" y="124" width="180" height="12" rx="3" fill="#1b212b"/>
+  <rect x="60" y="152" width="180" height="12" rx="3" fill="#1b212b"/>
+  <rect x="284" y="72" width="476" height="380" fill="#0f131a" stroke="#232935"/>
+  <rect x="308" y="100" width="260" height="40" rx="10" fill="#1b212b"/>
+  <rect x="308" y="156" width="360" height="40" rx="10" fill="#e7a33e" opacity="0.15"/>
+  <rect x="308" y="212" width="300" height="40" rx="10" fill="#1b212b"/>
+  <rect x="308" y="396" width="428" height="36" rx="8" fill="#171c24" stroke="#232935"/>
+  <text x="400" y="480" font-family="monospace" font-size="13" fill="#626b78" text-anchor="middle">AI Chat Application — preview placeholder</text>
+</svg>
