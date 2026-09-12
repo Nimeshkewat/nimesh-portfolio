@@ -1,24 +1,32 @@
-import { site } from '@/data/site'
-import { ArrowUpRightIcon, GitHubIcon, FileIcon } from './Icons'
+import { site } from "@/data/site";
+import { ArrowUpRightIcon, GitHubIcon, FileIcon } from "./Icons";
 
 export function Hero() {
   return (
-    <section id="home" className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden">
-      <div className="absolute inset-0 grid-fade pointer-events-none" aria-hidden="true" />
+    <section
+      id="home"
+      className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden"
+    >
+      <div
+        className="absolute inset-0 grid-fade pointer-events-none"
+        aria-hidden="true"
+      />
 
       <div className="relative mx-auto max-w-6xl px-6 grid md:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
         <div>
-          <p className="font-mono text-sm text-accent mb-5">Full-Stack Web Developer</p>
+          <p className="font-mono text-sm text-accent mb-5">
+            Full-Stack Web Developer
+          </p>
 
           <h1 className="font-display font-semibold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] tracking-tight text-balance text-text light:text-text-light">
             Hi, I&apos;m Nimesh.
-            <br />
-            I build modern full-stack web applications.
+            <br />I build modern full-stack web applications.
           </h1>
 
           <p className="mt-6 max-w-xl text-base sm:text-lg text-muted light:text-muted-light leading-relaxed">
-            {site.role} specializing in React, TypeScript, Node.js, Express, and MongoDB. I build
-            scalable applications from frontend interfaces to backend APIs and deployment.
+            {site.role} specializing in React, TypeScript, Node.js, Express, and
+            MongoDB. I build scalable applications from frontend interfaces to
+            backend APIs and deployment.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -57,24 +65,31 @@ export function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-[#4a5060]" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#4a5060]" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#4a5060]" />
-              <span className="ml-3 font-mono text-xs text-muted-dim">nimesh.ts</span>
+              <span className="ml-3 font-mono text-xs text-muted-dim">
+                nimesh.ts
+              </span>
             </div>
             <pre className="p-6 font-mono text-[13px] leading-7 overflow-x-auto">
               <code>
                 <span className="text-muted-dim">01</span>
-                <span className="text-blue">  const</span> developer <span className="text-muted-dim">=</span> {'{'}
-                {'\n'}
+                <span className="text-blue"> const</span> developer{" "}
+                <span className="text-muted-dim">=</span> {"{"}
+                {"\n"}
                 <span className="text-muted-dim">02</span>
-                {'    '}name: <span className="text-accent">'Nimesh'</span>,{'\n'}
+                {"    "}name: <span className="text-accent">'Nimesh'</span>,
+                {"\n"}
                 <span className="text-muted-dim">03</span>
-                {'    '}stack: <span className="text-accent">'MERN'</span> + <span className="text-accent">'TypeScript'</span>,{'\n'}
+                {"    "}stack: <span className="text-accent">'MERN'</span> +{" "}
+                <span className="text-accent">'TypeScript'</span>,{"\n"}
                 <span className="text-muted-dim">04</span>
-                {'    '}focus: [<span className="text-accent">'frontend'</span>, <span className="text-accent">'backend'</span>, <span className="text-accent">'deployment'</span>],{'\n'}
-                <span className="text-muted-dim">05</span>
-                {'    '}shipping: <span className="text-blue">true</span>
-                {'\n'}
-                <span className="text-muted-dim">06</span> {'}'}
-                <span className="ml-1 inline-block w-[7px] h-[15px] align-middle bg-accent animate-[blink_1.1s_steps(1)_infinite]" />
+                {"    "}focus: [<span className="text-accent">'frontend'</span>,{" "}
+                <span className="text-accent">'backend'</span>,{" "}
+                <span className="text-accent">'deployment'</span>],{"\n"}
+                {/* <span className="text-muted-dim">05</span>
+                {"    "}shipping: <span className="text-blue">true</span>
+                {"\n"} */}
+                <span className="text-muted-dim">05</span> {"};"}
+                <span className="ml-1 inline-block w-1.75 h-3.75 align-middle animate-[blink_1.1s_steps(1)_infinite]" />
               </code>
             </pre>
           </div>
@@ -85,5 +100,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
