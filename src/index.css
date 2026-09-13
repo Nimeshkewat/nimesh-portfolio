@@ -17,6 +17,8 @@
   --color-muted-dim: #626b78;
   --color-accent: #e7a33e;
   --color-accent-soft: #e7a33e1a;
+  --color-accent-button: #e7a33e;
+  --color-on-accent: #0b0e13;
   --color-blue: #6e9bd1;
   --color-blue-soft: #6e9bd11a;
 
@@ -34,6 +36,7 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -55,6 +58,7 @@
     color: var(--color-text);
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   html.light body {
@@ -65,6 +69,13 @@
   ::selection {
     background-color: var(--color-accent);
     color: #0b0e13;
+  }
+
+  html.light {
+    --color-accent: #a8590f;
+    --color-accent-soft: #a8590f1a;
+    --color-accent-button: #e08a2e;
+    --color-on-accent: #2b1607;
   }
 
   :focus-visible {
@@ -85,17 +96,6 @@
   }
 }
 
-@keyframes reveal-up {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes float-slow {
   0%,
   100% {
@@ -107,28 +107,8 @@
 }
 
 @layer utilities {
-  .reveal {
-    animation: reveal-up 0.6s ease-out both;
-  }
-
   .float-slow {
     animation: float-slow 7s ease-in-out infinite;
-  }
-
-  .delay-1 {
-    animation-delay: 0.08s;
-  }
-  .delay-2 {
-    animation-delay: 0.16s;
-  }
-  .delay-3 {
-    animation-delay: 0.24s;
-  }
-  .delay-4 {
-    animation-delay: 0.32s;
-  }
-  .delay-5 {
-    animation-delay: 0.4s;
   }
 }
 
