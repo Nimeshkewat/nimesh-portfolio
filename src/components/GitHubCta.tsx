@@ -1,5 +1,5 @@
-import { site } from '@/data/site'
-import { GitHubIcon } from './Icons'
+import { site } from "@/data/site";
+import { GitHubIcon } from "./Icons";
 
 export function GitHubCta() {
   return (
@@ -11,8 +11,9 @@ export function GitHubCta() {
               I build, learn, and ship.
             </h2>
             <p className="mt-4 text-muted light:text-muted-light leading-relaxed">
-              Most of my learning comes from building real applications and understanding how they
-              work from frontend to backend and deployment.
+              Most of my learning comes from building real applications and
+              understanding how they work from frontend to backend and
+              deployment.
             </p>
           </div>
 
@@ -21,7 +22,7 @@ export function GitHubCta() {
               href={site.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-3 rounded-md bg-accent text-bg hover:brightness-110 transition"
+              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-3 rounded-md bg-accent-button text-on-accent hover:brightness-110 transition"
             >
               <GitHubIcon className="h-4 w-4" />
               GitHub
@@ -36,5 +37,5 @@ export function GitHubCta() {
         </div>
       </div>
     </section>
-  )
+  );
 }

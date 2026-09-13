@@ -1,4 +1,4 @@
-import { useReveal } from "@/lib/useReveal";
+import { Reveal } from "./Reveal";
 
 const flow = [
   "Code",
@@ -10,8 +10,6 @@ const flow = [
 ];
 
 export function DevOps() {
-  const { ref, visible } = useReveal<HTMLDivElement>();
-
   return (
     <section className="py-24 md:py-32 border-t border-border-soft light:border-border-light">
       <div className="mx-auto max-w-6xl px-6">
@@ -27,12 +25,13 @@ export function DevOps() {
           </p>
         </div>
 
-        <div
-          ref={ref}
-          className={`flex flex-wrap items-center gap-3 md:gap-2 ${visible ? "reveal" : "opacity-0"}`}
-        >
+        <div className="flex flex-wrap items-center gap-3 md:gap-2">
           {flow.map((step, i) => (
-            <div key={step} className="flex items-center gap-3 md:gap-2">
+            <Reveal
+              key={step}
+              delay={i * 0.08}
+              className="flex items-center gap-3 md:gap-2"
+            >
               <div className="rounded-md border border-border light:border-border-light bg-surface light:bg-surface-light px-4 py-3">
                 <span className="font-mono text-sm text-text light:text-text-light">
                   {step}
@@ -43,7 +42,7 @@ export function DevOps() {
                   &rarr;
                 </span>
               )}
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

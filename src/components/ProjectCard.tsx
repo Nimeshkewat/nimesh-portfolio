@@ -1,5 +1,6 @@
+import { motion } from "framer-motion";
 import type { Project } from "@/data/projects";
-import { useReveal } from "@/lib/useReveal";
+import { Reveal } from "./Reveal";
 import { ArrowUpRightIcon, GitHubIcon } from "./Icons";
 
 export function ProjectCard({
@@ -9,13 +10,8 @@ export function ProjectCard({
   project: Project;
   reverse?: boolean;
 }) {
-  const { ref, visible } = useReveal<HTMLDivElement>();
-
   return (
-    <div
-      ref={ref}
-      className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${visible ? "reveal" : "opacity-0"}`}
-    >
+    <Reveal className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
       <div className={`${reverse ? "md:order-2" : ""}`}>
         <div className="group relative rounded-lg border border-border light:border-border-light overflow-hidden bg-surface light:bg-surface-light">
           <img
@@ -59,26 +55,30 @@ export function ProjectCard({
         </div>
 
         <div className="mt-7 flex flex-wrap items-center gap-4">
-          <a
+          <motion.a
             href={project.liveUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm font-medium px-4 py-2.5 rounded-md bg-accent text-bg hover:brightness-110 transition"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            className="inline-flex items-center gap-1.5 text-sm font-medium px-4 py-2.5 rounded-md bg-accent-button text-bg hover:brightness-110 transition-[filter]"
           >
             Live Demo
             <ArrowUpRightIcon className="h-3.5 w-3.5" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href={project.githubUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm font-medium px-4 py-2.5 rounded-md border border-border light:border-border-light text-text light:text-text-light hover:border-accent/60 hover:text-accent transition"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            className="inline-flex items-center gap-1.5 text-sm font-medium px-4 py-2.5 rounded-md border border-border light:border-border-light text-text light:text-text-light hover:border-accent/60 hover:text-accent transition-colors"
           >
             <GitHubIcon className="h-4 w-4" />
             GitHub
-          </a>
+          </motion.a>
         </div>
       </div>
-    </div>
+    </Reveal>
   );
 }

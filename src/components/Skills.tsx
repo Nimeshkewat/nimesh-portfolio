@@ -1,9 +1,7 @@
 import { skillGroups } from "@/data/skills";
-import { useReveal } from "@/lib/useReveal";
+import { Reveal } from "./Reveal";
 
 export function Skills() {
-  const { ref, visible } = useReveal<HTMLDivElement>();
-
   return (
     <section
       id="skills"
@@ -21,34 +19,30 @@ export function Skills() {
           </p>
         </div>
 
-        <div
-          ref={ref}
-          className={`grid md:grid-cols-3 gap-6 ${visible ? "reveal" : "opacity-0"}`}
-        >
-          {skillGroups.map((group) => (
-            <div
-              key={group.label}
-              className="rounded-lg border border-border light:border-border-light bg-surface light:bg-surface-light p-6 transition-all duration-300 hover:border-accent/40 hover:-translate-y-1"
-            >
-              <h3 className="font-mono text-xs text-muted-dim mb-5">
-                {group.label}
-              </h3>
-              <ul className="flex flex-wrap gap-2">
-                {group.items.map((item) => (
-                  <li
-                    key={item.name}
-                    className="flex items-center gap-2 text-sm px-3 py-1.5 rounded-md border border-border-soft light:border-border-light text-text light:text-text-light bg-bg/60 light:bg-bg-light transition-transform duration-200 hover:scale-105 hover:border-accent/40"
-                  >
-                    <item.icon
-                      className="h-4 w-4 shrink-0"
-                      style={{ color: item.color }}
-                      aria-hidden="true"
-                    />
-                    {item.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {skillGroups.map((group, index) => (
+            <Reveal key={group.label} delay={index * 0.1}>
+              <div className="h-full rounded-lg border border-border light:border-border-light bg-surface light:bg-surface-light p-6 transition-all duration-300 hover:border-accent/40 hover:-translate-y-1">
+                <h3 className="font-mono text-xs text-muted-dim mb-5">
+                  {group.label}
+                </h3>
+                <ul className="flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <li
+                      key={item.name}
+                      className="flex items-center gap-2 text-sm px-3 py-1.5 rounded-md border border-border-soft light:border-border-light text-text light:text-text-light bg-bg/60 light:bg-bg-light transition-transform duration-200 hover:scale-105 hover:border-accent/40"
+                    >
+                      <item.icon
+                        className="h-4 w-4 shrink-0"
+                        style={{ color: item.color }}
+                        aria-hidden="true"
+                      />
+                      {item.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
           ))}
         </div>
       </div>

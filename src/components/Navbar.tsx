@@ -70,7 +70,7 @@ export function Navbar() {
             </button>
             <a
               href="#projects"
-              className="text-sm font-medium px-4 py-2 rounded-md bg-accent text-bg hover:brightness-110 hover:-translate-y-0.5 transition"
+              className="text-sm font-medium px-4 py-2 rounded-md bg-accent-button text-on-accent hover:brightness-110 hover:-translate-y-0.5 transition"
             >
               View Projects
             </a>
@@ -134,7 +134,7 @@ export function Navbar() {
               <a
                 href="#projects"
                 onClick={() => setOpen(false)}
-                className="inline-block text-sm font-medium px-5 py-2.5 rounded-md bg-accent text-bg"
+                className="inline-block text-sm font-medium px-5 py-2.5 rounded-md bg-accent-button text-on-accent"
               >
                 View Projects
               </a>
