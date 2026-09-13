@@ -40,17 +40,19 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Nimeshkewat/ai-chat-app",
   },
   {
-    slug: "mern-ecommerce",
-    title: "MERN E-Commerce Application",
+    slug: "food-delivery-aplication",
+    title: "Food Loop Application",
     description:
-      "A full-stack e-commerce application built with the MERN stack, including authentication, product management, search, payments, and cloud-based image handling.",
-    image: "/projects/ecommerce.svg",
+      "A full-stack food ordering platform where users can browse restaurants, order food, and pay online — and restaurant owners can manage their menu and track incoming orders.",
+    image: "/projects/food-loop.png",
     features: [
-      "User authentication and admin functionality",
-      "Product browsing, search, and pagination",
-      "Cloudinary image management",
-      "Razorpay payment integration",
+      "Email/password auth with verification, forgot/reset password",
+      "Razorpay payment integration with webhook + signature verification",
+      "Limits requests to keep apps running smoothly",
+      "Image uploads via Cloudinary",
       "Secure REST API architecture",
+      "Product browsing, search, and pagination",
+      "Browse restaurants with search & cuisine filters",
     ],
     tech: [
       "React",
@@ -64,7 +66,7 @@ export const projects: Project[] = [
       "JWT",
       "Tailwind CSS",
     ],
-    liveUrl: "LIVE_DEMO_URL_HERE",
-    githubUrl: "GITHUB_REPO_URL_HERE",
+    liveUrl: "https://food-loop-frontend-black.vercel.app/",
+    githubUrl: "https://github.com/Nimeshkewat/food-loop-app",
   },
 ];
