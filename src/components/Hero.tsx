@@ -14,25 +14,25 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-6 grid md:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
         <div>
-          <p className="font-mono text-sm text-accent mb-5">
+          <p className="font-mono text-sm text-accent mb-5 reveal">
             Full-Stack Web Developer
           </p>
 
-          <h1 className="font-display font-semibold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] tracking-tight text-balance text-text light:text-text-light">
+          <h1 className="font-display font-semibold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] tracking-tight text-balance text-text light:text-text-light reveal delay-1">
             Hi, I&apos;m Nimesh.
             <br />I build modern full-stack web applications.
           </h1>
 
-          <p className="mt-6 max-w-xl text-base sm:text-lg text-muted light:text-muted-light leading-relaxed">
+          <p className="mt-6 max-w-xl text-base sm:text-lg text-muted light:text-muted-light leading-relaxed reveal delay-2">
             {site.role} specializing in React, TypeScript, Node.js, Express, and
             MongoDB. I build scalable applications from frontend interfaces to
             backend APIs and deployment.
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div className="mt-9 flex flex-wrap items-center gap-4 reveal delay-3">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-3 rounded-md bg-accent text-bg hover:brightness-110 transition"
+              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-3 rounded-md bg-accent text-bg hover:brightness-110 hover:-translate-y-0.5 transition"
             >
               View My Projects
             </a>
@@ -40,7 +40,7 @@ export function Hero() {
               href={site.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-3 rounded-md border border-border light:border-border-light text-text light:text-text-light hover:border-accent/60 hover:text-accent transition"
+              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-3 rounded-md border border-border light:border-border-light text-text light:text-text-light hover:border-accent/60 hover:text-accent hover:-translate-y-0.5 transition"
             >
               <GitHubIcon className="h-4 w-4" />
               GitHub
@@ -51,7 +51,7 @@ export function Hero() {
             href={site.resume}
             target="_blank"
             rel="noreferrer"
-            className="mt-6 inline-flex items-center gap-1.5 text-sm text-muted light:text-muted-light hover:text-accent transition group"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm text-muted light:text-muted-light hover:text-accent transition group reveal delay-4"
           >
             <FileIcon className="h-4 w-4" />
             Download Resume
@@ -59,7 +59,7 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="relative">
+        <div className="relative reveal delay-2">
           <div className="rounded-lg border border-border light:border-border-light bg-surface light:bg-surface-light shadow-2xl shadow-black/30 overflow-hidden">
             <div className="flex items-center gap-1.5 px-4 py-3 border-b border-border light:border-border-light bg-surface-raised light:bg-bg-light">
               <span className="h-2.5 w-2.5 rounded-full bg-[#4a5060]" />
@@ -85,16 +85,16 @@ export function Hero() {
                 {"    "}focus: [<span className="text-accent">'frontend'</span>,{" "}
                 <span className="text-accent">'backend'</span>,{" "}
                 <span className="text-accent">'deployment'</span>],{"\n"}
-                {/* <span className="text-muted-dim">05</span>
+                <span className="text-muted-dim">05</span>
                 {"    "}shipping: <span className="text-blue">true</span>
-                {"\n"} */}
-                <span className="text-muted-dim">05</span> {"};"}
-                <span className="ml-1 inline-block w-1.75 h-3.75 align-middle animate-[blink_1.1s_steps(1)_infinite]" />
+                {"\n"}
+                <span className="text-muted-dim">06</span> {"}"}
+                <span className="ml-1 inline-block w-1.75 h-3.75 align-middle bg-accent animate-[blink_1.1s_steps(1)_infinite]" />
               </code>
             </pre>
           </div>
           <div
-            className="absolute -z-10 -bottom-8 -right-8 h-40 w-40 rounded-full bg-accent/10 blur-3xl"
+            className="absolute -z-10 -bottom-8 -right-8 h-40 w-40 rounded-full bg-accent/10 blur-3xl float-slow"
             aria-hidden="true"
           />
         </div>

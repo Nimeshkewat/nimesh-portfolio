@@ -44,7 +44,7 @@ export function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm text-muted light:text-muted-light hover:text-text light:hover:text-text-light transition-colors"
+                  className="relative text-sm text-muted light:text-muted-light hover:text-text light:hover:text-text-light transition-colors after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
                 >
                   {link.label}
                 </a>
@@ -70,7 +70,7 @@ export function Navbar() {
             </button>
             <a
               href="#projects"
-              className="text-sm font-medium px-4 py-2 rounded-md bg-accent text-bg hover:brightness-110 transition"
+              className="text-sm font-medium px-4 py-2 rounded-md bg-accent text-bg hover:brightness-110 hover:-translate-y-0.5 transition"
             >
               View Projects
             </a>
