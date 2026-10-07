@@ -13,6 +13,7 @@ import {
   SiDocker,
   SiGithubactions,
   SiRedux,
+  SiPostgresql,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -45,6 +46,7 @@ export const skillGroups: SkillGroup[] = [
       { name: "Node.js", icon: SiNodedotjs, color: "#5FA04E" },
       { name: "Express.js", icon: SiExpress, color: "#E7EAEE" },
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "#3178C6" },
       { name: "REST APIs", icon: TbApi, color: "#E7A33E" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
     ],
