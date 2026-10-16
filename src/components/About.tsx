@@ -27,8 +27,9 @@ export function About() {
               <span className="text-text light:text-text-light">
                 MERN stack with TypeScript
               </span>
-              . I work with React on the frontend and Node.js/Express on the
-              backend, with MongoDB for data storage.
+              , though I work comfortably with both MongoDB and PostgreSQL for
+              data storage. I build the frontend with React and power the
+              backend using Node.js/Express.
             </p>
             <p>
               I&apos;ve also been learning and applying Docker, GitHub Actions,
