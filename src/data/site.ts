@@ -4,7 +4,7 @@ export const site = {
   email: "nimeshwork529@gmail.com",
   github: "https://github.com/Nimeshkewat",
   linkedin: "https://www.linkedin.com/in/nimesh-work-a68526436",
-  resume: "RESUME_URL_HERE",
+  resume: "/Nimesh_kewat_fullstack_resume.pdf",
 };
 
 export const navLinks = [

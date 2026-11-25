@@ -83,8 +83,7 @@ export function Hero() {
           <motion.a
             variants={item}
             href={site.resume}
-            target="_blank"
-            rel="noreferrer"
+            download=""
             className="mt-6 inline-flex items-center gap-1.5 text-sm text-muted light:text-muted-light hover:text-accent transition group"
           >
             <FileIcon className="h-4 w-4" />
