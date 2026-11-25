@@ -123,11 +123,7 @@ export function Hero() {
                 {"    "}focus: [<span className="text-accent">'frontend'</span>,{" "}
                 <span className="text-accent">'backend'</span>,{" "}
                 <span className="text-accent">'deployment'</span>],{"\n"}
-                <span className="text-muted-dim">05</span>
-                {"    "}shipping: <span className="text-blue">true</span>
-                {"\n"}
-                <span className="text-muted-dim">06</span> {"}"}
-                <span className="ml-1 inline-block w-1.75 h-3.75 align-middle bg-accent animate-[blink_1.1s_steps(1)_infinite]" />
+                <span className="text-muted-dim">06</span> {"};"}
               </code>
             </pre>
           </div>
